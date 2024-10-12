@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image:url(images/R.jpeg) ;
+    background-size: cover;
+    background-position: center;
+    top: -50%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background:url(images/Office5-29.webp);
+    background-position: center;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    opacity: 1;
+}
+
+
+.header img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #000000, /* Horizontal and vertical shadow */
+                0 0 20px #00b3ff, 
+                0 0 30px #00b3ff, 
+                0 0 40px #00b3ff, 
+                0 0 50px #00b3ff, 
+                0 0 60px #00b3ff, 
+                0 0 70px #000000;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #bbbaba;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.section:hover {
+  box-shadow: 0 0 20px rgba(18, 247, 255, 0.6), /* added glow effect */
+              0 0 40px rgba(18, 247, 255, 0.4),
+              0 0 60px rgba(18, 247, 255, 0.2);
+  transform: translateY(-5px); /* slight upward transformation */
+}
+h1,h2,h3,i{
+    color: #030303;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+i{
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #000000, /* Horizontal and vertical shadow */
+                0 0 20px #00b3ff, 
+                 
+                0 0 50px #00b3ff, 
+                0 0 60px #00b3ff, 
+                0 0 70px #000000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px #f8f5f5, /* Horizontal and vertical shadow */
+                0 0 20px #f3f2f2, 
+                0 0 30px #f6f5f5, 
+                0 0 40px #fcf9f9, 
+                0 0 50px #e4e1e1, 
+                0 0 60px #efeeee, 
+                0 0 70px #fefdfd;
+    
+    
+
+}
+
+li {
+    margin-bottom: 10px;
+    
+}
+
+
+button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: #007BFF; /* changed from linear-gradient to solid color */
+    color: white;
+    border: 3px solid #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s; /* changed transition property */
+}
+
+button:hover {
+    box-shadow: 0 0 20px rgba(18, 247, 255, 0.6), /* added glow effect */
+                0 0 40px rgba(18, 247, 255, 0.4),
+                0 0 60px rgba(18, 247, 255, 0.2);
+    transform: scale(1.05); /* kept the scale effect */
+}
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+    visibility: hidden; /* Initially hidden */
+}
+
+.full-screen.show  {
+    transform: scale(1);
+    visibility: visible; /* Make visible when shown */
+}
+
+.full-screen .header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #f7f7f7, #e7e7e7);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.full-screen .header img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.full-screen .header h1 {
+    font-size: 48 px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+.footer{
+    font-size: 20px;
+    color: #fff; /* Text color */
+    text-align: center;
+    text-shadow: 0 0 10px #010101, /* Horizontal and vertical shadow */
+                0 0 20px #00b3ff, 
+                0 0 30px #00b3ff, 
+                0 0 40px #000000, 
+                0 0 50px #00b3ff, 
+                0 0 60px #00b3ff, 
+                0 0 70px #030303;
+    }
